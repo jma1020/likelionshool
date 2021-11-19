@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 크기 단위</title>
+    <style>
+        html, body{
+            font-size: 20px;
+        }
+        p {
+            font-size: 2em;
+            font-weight: 900;
+        }
+
+        div {
+            font-size: 2em;
+        }
+        /* 2em 배수단위이다 내 부모의(body 태그) 배수이다 40px이죠 */
+
+        /* 중첩되면 계속 커져서 rem 출현 */
+        .one {
+            font-size: 2rem;
+        }
+        /* rem 은  html 폰트사이즈의 영향을 받는다 */
+    </style>
+</head>
+<body>
+    <h1>helloworld</h1>
+    <p>helloworld</p>
+    <div>
+        <!-- 10px * 2 = 20px -->
+        <div>
+            <!-- 20px * 2 40px -->
+            <div>
+                <!-- 40px * 2 80px -->
+                hello world
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- 10px * 2 = 20px -->
+        <div>
+            <!-- 20px * 2 40px -->
+            <div class="one">
+                <!-- 40px * 2 80px -->
+                hello world
+            </div>
+        </div>
+    </div>
+</body>
+</html>

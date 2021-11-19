@@ -1,0 +1,129 @@
+body {
+    font-family: 'Noto Sans KR', sans-self;
+    
+}
+* {
+    box-sizing: border-box;
+}
+.vending-machine {
+    margin: 28px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.list-item .btn-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+
+
+.vending-machine .list-item .btn-item .img-item{
+    width: 30px;
+    height: 60px;
+}
+
+
+.return-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.return-box > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+
+/* 왜텍스트는 무조건 float인가 margin right auto가 안먹내 */
+
+.cont-return .info-balance {
+    width: 55%;
+    background:#EAE8FE;;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.cont-return .info-balance .txt-balance {
+    float: right;
+}
+
+.cont-return .btn-return {
+    width: 35%;
+  
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cont-put .inp-put{
+    width: 55%;
+    padding: 6px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.cont-put .btn-put {    
+    width: 35%;
+    
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.cont-get .list-item-staged {
+    width: 55%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #EAE8FE;;
+    text-align: center;
+    padding: 12px ;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow-y: scroll;
+
+}
+
+.cont-get .list-item-staged img{
+    width: 25px;
+    height: 40px;
+}
+/* 스크롤 생기는거랑 텍스트 정렬하는거 */
+.cont-get .list-item-staged .item-staged {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    padding: 8px ;
+}
+
+.cont-get .btn-get{
+    width: 35%;
+    height: 90px;
+    background: #6327FE;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* myinfo */
+
+.my-info .cont-mymoney .info-mymoney{
+    background: #EAE8FE;
+    
+}

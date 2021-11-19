@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 키프레임 이름 == 애니메이션 이름 */
+        @keyframes hojun {
+            0% {
+                transform: translate(0, 0);
+                background: pink;
+                color: blueviolet;
+            }
+
+            100% {
+                background: red;
+                color: black;
+                transform: translate(300px, 0) rotate(360deg) scale(2);
+            }
+        }
+
+        div {
+            margin: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            animation: hojun 10s;
+        }
+    </style>
+</head>
+<body>
+    <div>hello world</div>
+</body>
+</html>

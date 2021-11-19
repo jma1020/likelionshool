@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변단위</title>
+    <style>
+        .one {
+            height: 200px;
+            width: 50%;
+            background-color: darkblue;
+        }
+        /* 부모가 가진 넓이의 절반을 가진다 */
+        .two {
+            height: 100px;
+            width: 50%;
+            background-color: violet;
+        }
+
+        .three {
+            height: 100px;
+            width: 50vw;
+            background-color: turquoise;
+        }
+        /* vw(width), vh(height) 는 부모가 가진 화면을 뚫어버린다, 화면비 백분율단위 */
+    </style>
+</head>
+<body>
+    <!-- em, %, rem, vw, vh -->
+    <div class="one">
+        <div class="two"></div>
+    </div>
+    <br>
+    <div class="one">
+        <div class="three"></div>
+    </div>
+</body>
+</html>

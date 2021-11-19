@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+        body {
+            background-color: tomato;
+        }
+
+        .contaiver {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            box-sizing: border-box;
+            border: 10px solid red;
+            height: 500px;
+            width: 100%;
+            background-color: yellow;
+        }
+
+        .item {
+            margin: 50px;
+            width: 50px;
+            background-color: sienna;
+        }
+
+        @media screen and ( max-width: 1000px) {
+            body {
+                background-color: green;
+            }
+            .contaiver {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                box-sizing: border-box;
+                border: 10px solid red;
+                height: 800px;
+                width: 100%;
+                background-color: yellow;
+            }
+
+            .item {
+                margin: 50px;
+                width: 800px;
+                background-color: sienna;
+            }
+        }
+            
+        @media screen and (max-width:600px) {
+            body {
+                background-color: pink;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus dicta ducimus assumenda ad qui, quo nemo quae doloremque repellat? Tempora eum omnis, quos velit dolore dolor itaque nemo iure!
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus dicta ducimus assumenda ad qui, quo nemo quae doloremque repellat? Tempora eum omnis, quos velit dolore dolor itaque nemo iure!
+        </div>
+    </div>
+    
+</body>
+</html>

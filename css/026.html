@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헷갈리는 선택자</title>
+    <style>
+        .one .two {
+            color: red;
+        }
+        /* one에 속해있는 two */
+        .one.two {
+            color: blue;
+        }
+        /* 얘는 둘다가지고 있는 애 */
+    </style>
+</head>
+<body>
+    <div class="one">hello world</div>
+    <div class="one two">hello world</div>
+    <div class="one">
+        <div class="two">hello world</div>
+    </div>
+    
+</body>
+</html>

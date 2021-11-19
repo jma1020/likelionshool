@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        a[href="http://www.paullab.co.kr"] {
+            font-size: 55px;
+        }
+        a[href~="paul"] {
+            font-size: 90px;
+        }
+        /* 단어로 선택한다 */
+        /* 이거는 그 단어가 완전히 매칭되어야 스타일이 적용됨 */
+        /* a[href*="paul"] {
+            font-style: italic;
+        } */
+        /* 문자열로 선택한다 */
+        /* 그러므로 문자열로 스타일을 준것이 적용된다 */
+
+        /* 가끔 검색엔진에서도 차이가 있는게 이거 때문일까?? */
+        /* 간혹 검색이 엄격한거는 단어이고 유연한거는 문자열로 준건가 */
+        /* 각각 서비스마다 검색엔진 차이가있는데 */
+    </style>
+</head>
+<body>
+    <a href="#">클릭해</a>:
+    <a href="http://www. paul .co.kr">클릭해</a>:
+ 
+</body>
+</html>

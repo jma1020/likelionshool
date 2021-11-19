@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        .btn {
+            margin: 30%;
+            border: none;
+            color: pink;
+            position: relative;
+            /* overflow: hidden; */
+            
+            width: 100px;
+            height: 100px;
+            transition: all 2s;
+        }
+
+        .btn::before{
+            content: "";
+            position: absolute;
+            background: green;
+            top: 0;
+            left: 0;
+            width: 50%;
+            transition: all 3s;
+        }
+        .btn::after{
+            content: "";
+            position: absolute;
+            background: red;
+            top:0;
+            left:50px;
+            width: 50%;
+           
+            transition: all 3s;
+        }
+        .btn:hover {
+            transform:scale(2);
+        }
+        .btn:hover::before {
+            height:100%;
+            transform: translate(-50%);
+        }
+        .btn:hover::after{
+            height: 100%;
+            transform: scale(2);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn"> 이탈리아</button>
+</body>
+</html>

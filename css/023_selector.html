@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        ul p {
+            color: red;
+        }
+        /* 이거는 ul안에 있는 p태그는 전부 */
+        li > p {
+            color: blue;
+        }
+        /* li바로 밑에 p태그 = li > p (자식선택자)*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <p>helloworld</p>
+        </li>
+        <li>
+            <div>
+                <div>
+                    <div>
+                        <p>helloworld</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>helloworld</li>
+        <li>helloworld</li>
+    </ul>
+</body>
+</html>
