@@ -74,7 +74,9 @@
     width:22px;
     height:22px;
     margin-left:16px;
-    background-image:url("../images-login/images-login/icon_google.png");
+    background-image:url("./images-login/css_sprites레티나.png");
+    background-size: 117px 84px;
+    background-position: -10px -58px;
 }
 
 .link-sns-login.icon-naver{
@@ -82,7 +84,7 @@
 }
 
 .link-sns-login.icon-naver::before{
-    background-image:url("../images-login/images-login/icon_naver.png");
+    background-position: -10px -10px;
 }
 .link-sns-login.icon-facebook{
     border-color:#2D9CDB;
@@ -92,12 +94,13 @@
     /* background-image:url("../images-login/icon_facebook.png");
     background-repeat:no-repeat;
     background-position: center; */
-    background:url("../images-login/images-login/icon_facebook.png") center no-repeat;
+    height: 24px;
+    background-position: -58px -58px;
 }
 .link-sns-login.icon-kakao{
     border-color:#F2C94C;
 }
 
 .link-sns-login.icon-kakao::before{
-    background-image:url("../images-login/images-login/icon_kakao.png");
+    background-position: -58px -10px;
 }

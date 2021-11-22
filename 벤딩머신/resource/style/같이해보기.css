@@ -299,9 +299,9 @@ row  잔액,         거스름돈 반환
   and (max-device-width: 480px) /* 기기의 넓이가 480px 이하  */
   and (-webkit-min-device-pixel-ratio: 2) /* 최소 1px 당 2개의 화소 */
   {
-      body {
-          /* background-color: #fff; */
-      }
+      /* body {
+           background-color: #fff; 
+      } */
 
       #app {
           padding-top: 160px;
