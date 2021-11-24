@@ -1,0 +1,10 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: seagreen;
+    transition: all .3s;
+    &:hover {
+        background-color: sienna;
+    }
+
+}

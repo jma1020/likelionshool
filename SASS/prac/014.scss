@@ -1,0 +1,10 @@
+@mixin image-style($ul, $size, $repeat, $positionX : 50%, $positionY : 50%) {
+    background-image: url($ul);
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $positionX $positionY;
+  }
+  
+  .profile {
+    @include image-style("./assets/user.jpg", cover, no-repeat);
+  }
